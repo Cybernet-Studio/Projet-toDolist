@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+html, body { margin:0; padding:0; }
+body { 
+    cursor: url(retroCurseur.cur), pointer;
+    font-family: 'Bubblegum Sans', cursive;
+    color:gold;background: rgb(2,0,36);
+}
+
+#bkg {
+    position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+    background: -moz-linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(58,9,121,1) 60%, rgba(119,0,255,1) 100%);
+    background: -webkit-linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(58,9,121,1) 60%, rgba(119,0,255,1) 100%);
+    background: linear-gradient(140deg, rgba(2,0,36,1) 0%, rgba(58,9,121,1) 60%, rgba(119,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#7700ff",GradientType=1);
+}
+
+#wrp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.barreSaisie{
+    display: block; margin: 0 auto 0 auto;
+    border: 1px solid black;
+    background-color: rgb(168, 187, 190);
+    border-radius: 100px;
+    width: 60%; height: 140px;
+}
+.barreSaisie h2{
+    color: #bc13fe;
+    animation: cli;
+    text-align: center;
+    font-size: 32px;
+}
+.barreSaisie div{
+    display: flex;
+    justify-content: center;
+}
+.barreSaisie input{
+    cursor: url(retroCurseurText.cur), pointer;
+    font-size: 17px;
+    width: 60%; height: 30px;
+    border-radius: 10px;
+}
+.barreSaisie input:hover{
+    background-color: rgb(245, 235, 235);
+}
+input + button{
+    cursor: url(retroCurseurCross.cur), pointer;
+    background-color: rgb(25, 207, 25);
+    color: white;
+    font-size:23px;
+    border: rgb(7, 129, 7) 2px solid;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+div + button{
+    cursor: url(retroCurseurCross.cur), pointer;
+    display: block;
+    background-color: rgb(207, 31, 25);
+    color: white;
+    font-size:23px;
+    border: rgb(129, 7, 7) 2px solid;
+    border-radius: 10px;
+    margin:20px auto 0 auto;
+}
+.strike {
+    text-decoration: line-through;
+}
+.postIt{
+    cursor: url(retroCurseur2.cur), pointer;
+    display: inline-flex;
+    color: purple;
+    align-items: center;
+    justify-content: center;
+    width: 200px; height: 200px;
+    border: 1px rgb(255, 255, 255) solid;
+    font-size: 22px; list-style: none; 
+    padding: 5px 0 0 12px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px 0 10px 35px;
+}
